@@ -51,31 +51,14 @@ export class Blank extends React.Component {
           />
         </View>
       </View>
+      <Button title="Submit" onPress={() => alert("Pressed!")} />
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   View_1: {},
-  View_2: {
-    marginTop: 0,
-    marginBottom: 0,
-    paddingLeft: 0,
-    paddingRight: 0,
-    paddingTop: 0,
-    paddingBottom: 0,
-    fontSize: 12,
-    color: "#000000",
-    backgroundColor: "#ffffff",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "flex-start",
-    alignItems: "flex-start",
-    alignContent: "stretch",
-    backgroundSize: "auto"
-  },
+  View_2: { flexDirection: "row" },
   View_3: {},
   Text_5: {},
   View_4: {},
@@ -84,7 +67,8 @@ const styles = StyleSheet.create({
   View_8: {},
   Text_10: {},
   View_9: {},
-  TextInput_11: {}
+  TextInput_11: {},
+  Button_12: {}
 })
 
 function mapStateToProps(state) {
